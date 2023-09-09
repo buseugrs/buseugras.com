@@ -15,7 +15,9 @@ function App() {
 
       <article className="header">
         <div className="content">
-          <h1> <span className="sub-txt">Buse Uğraş</span> | <span className="sub-txt">Front-End Developer</span></h1>
+          <h1 className="left-txt">Buse Uğraş</h1>
+          <span>|</span>
+          <h1 className="right-txt">Front-End Developer</h1>
         </div>
       </article>
 
@@ -50,25 +52,6 @@ function App() {
           </li>
         </ul>
       </article>
-
-      {/* <article className="header">
-        <div className="header-img">
-          <img
-            className="coding-img"
-            src="https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/2022/03/07/1183987013.jpg"
-            alt="frontend-development"
-          />
-        </div>
-        <div className="header-txt">
-          <h1>Hi, I'm Buse</h1>
-          <p>Frontend Developer</p>
-          <a href="mailto:busesekerr96@gmail.com">
-            <button className="btn btn-primary">
-              Contact Me <i class="fa-solid fa-paper-plane"></i>
-            </button>
-          </a>
-        </div>
-      </article> */}
 
       <article className="skills">
         <div className="skill-section">
