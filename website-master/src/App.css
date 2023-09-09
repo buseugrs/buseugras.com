@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.background-image {
+  background-image: url("https://rare-gallery.com/thumbs/4580148-keyboards-computer-mice-computer-window-desk.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed; /* Optional: Fixed background */
+  position: relative;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  font-size: 1.1rem;
+}
+
+.navbar .navbar-logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-left: 20px;
+}
+
+.navbar-lnk {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.navbar-lnk ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-lnk a {
+  margin: 0 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s ease;
+  padding: 15px 0;
+  border-top: 4px solid rgb(101, 39, 190);
+  border-bottom: 4px solid rgb(101, 39, 190);
+  border: hidden;
+}
+
+.navbar-lnk  a:hover {
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  padding: 6px 0;
+}
+.contact-lnk  li a {
+  text-decoration: none;
+}
+
+.contact-lnk {
+  position: fixed;
+  top: 40%;
+  z-index: 2;
+}
+
+.contact-lnk ul {
+  padding: 0px;
+  transform: translate(-270px, 0);
+}
+.contact-lnk ul li {
+  display: block;
+  margin: 5px 25px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(255, 96, 0);
+  width: 300px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 0 30px 30px 0;
+  transition: all 1s;
+}
+
+.contact-lnk ul li:hover {
+  transform: translate(110px, 0);
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.contact-lnk ul li:hover a {
+  color: rgb(255, 96, 0);
+  font-weight: 600;
+}
+
+.contact-lnk ul li:hover i {
+  color: #fff;
+  background: rgb(255, 96, 0);
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+
+.contact-lnk ul li i {
+  margin-left: 10px;
+  color: rgb(255, 96, 0);
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.lnk-txt {
+  font-size: 1.2rem;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  line-height: 5rem;
+  margin-top: 50px;
+  height: 20vh;
+  width: 100vw;
+  font-size: 2rem;
+}
+
+.header h1{
+  font-weight: 400;
+}
+
+.header .sub-txt{
+  font-weight: 100;
+}
+
+.skills {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  color: white;
+  width: 100vw;
+  position: absolute;
+  bottom: 10px;
+}
+
+.skills h1,
+h3 {
+  font-weight: 400;
+}
+
+.skill-section {
+  display: flex;
+}
+
+.skill-section i {
+  margin-bottom: 30px;
+  color:   rgb(255, 96, 0);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.html,
+.css,
+.javascript,
+.react,
+.angular {
+  margin: 20px 50px 20px 50px;
+  /* Adjust the margin size as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
