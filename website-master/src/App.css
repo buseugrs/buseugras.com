@@ -10,16 +10,18 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  width: 100vw;
   background-attachment: fixed; /* Optional: Fixed background */
   position: relative;
+  background-size: 100% 100%;
 }
 
-.overlay{
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
@@ -32,18 +34,18 @@
   font-size: 1.1rem;
 }
 
-.navbar .navbar-logo {
-  display: flex;
-  align-items: center;
-  color: white;
-  margin-left: 20px;
-}
-
 .navbar-lnk {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-right: 20px;
 }
+
+.navbar-lnk.open{
+  display: flex;
+  animation: slideFromLeft 0.5s ease forwards;
+}
+
 .navbar-lnk ul {
   list-style: none;
   display: flex;
@@ -61,12 +63,33 @@
   border: hidden;
 }
 
-.navbar-lnk  a:hover {
+.navbar-lnk a:hover {
   border-top: 4px solid white;
   border-bottom: 4px solid white;
   padding: 6px 0;
 }
-.contact-lnk  li a {
+
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+nav .hamburger-menu .bar {
+  width: 100%;
+  height: 0.4rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  margin: 5px;
+}
+
+.contact-lnk li a {
   text-decoration: none;
 }
 
@@ -121,7 +144,7 @@
   font-size: 1.2rem;
 }
 
-.header{
+.header {
   text-align: center;
   color: white;
   line-height: 5rem;
@@ -134,27 +157,23 @@
   justify-content: center;
 }
 
-.header h1{
+.header h1 {
   font-weight: 100;
 }
 
-.header span{
+.header span {
   font-weight: 100;
   margin: 0 5px;
   font-size: 2.5rem;
 }
 
-.content{
+.content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .skills {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
   color: white;
   width: 100vw;
   position: absolute;
@@ -168,11 +187,12 @@ h3 {
 
 .skill-section {
   display: flex;
+  justify-content: center;
 }
 
 .skill-section i {
-  margin-bottom: 30px;
-  color:   rgb(255, 96, 0);
+  margin-bottom: 20px;
+  color: rgb(255, 96, 0);
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   width: 70px;
@@ -198,7 +218,6 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
 }
 
 @keyframes slideFromLeft {
@@ -222,16 +241,112 @@ h3 {
   }
 }
 
+@keyframes slideToLeft {
+  from {
+    transform: translateX(0); /* Start from the current position */
+  }
+  to {
+    transform: translateX(-100%); /* Slide to the left */
+  }
+}
+
 /* Apply the animation to the header element */
-
-
-.header .left-txt{
-  animation: slideFromLeft 1s ease forwards ;
+.header .left-txt {
+  animation: slideFromLeft 1s ease forwards;
 }
-.header .right-txt{
-  animation: slideFromRight 1s ease forwards ;
+.header .right-txt {
+  animation: slideFromRight 1s ease forwards;
 }
 
-.test{
-  animation: slideFromLeft 1s ease forwards ;
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+  nav .hamburger-menu{
+    display: flex;
+  }
+
+  
+  .navbar-lnk{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    margin-top: 6rem;
+  }
+
+  .content{
+    flex-direction: column;
+    font-size: 1rem;
+    line-height: 3rem;
+  }
+
+  .header span{
+    display: none;
+  }
+
+  .skill-section h3{
+    display: none;
+  }
+
+  .skill-section i{
+    margin: 0;
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+  }
+
+  .html,
+.css,
+.javascript,
+.react,
+.angular{
+  margin: 0.5%;
+  /* Adjust the margin size as needed */
 }
+  }
+
+  @media screen and (max-width:480px) {
+    nav .hamburger-menu{
+      display: flex;
+    }
+  
+    
+    .navbar-lnk{
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      align-items: start;
+      margin-top: 6rem;
+    }
+  
+    .content{
+      flex-direction: column;
+      font-size: 1rem;
+      line-height: 3rem;
+    }
+    .header span{
+      display: none;
+    }
+  
+    .skill-section h3{
+      display: none;
+    }
+
+    .skill-section i{
+      margin: 0;
+      width: 60px;
+      height: 60px;
+      font-size: 40px;
+    }
+  
+    .html,
+  .css,
+  .javascript,
+  .react,
+  .angular{
+    margin: 0.5%;
+    /* Adjust the margin size as needed */
+  }
+    }
+  
+  

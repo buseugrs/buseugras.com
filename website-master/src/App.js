@@ -1,15 +1,27 @@
+import React, { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="App background-image">
       <div className="overlay"></div>
       <nav className="navbar">
-        <div className="navbar-lnk">
+        <div
+          className="hamburger-menu"
+          onClick={() => {
+            return setMenuOpen((prevMenuOpen) => !prevMenuOpen);
+          }}
+        >
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
+        <div className={`navbar-lnk ${menuOpen ? "open" : ""}`}>
           <a href="#">Home</a>
           <a href="#">About</a>
           <a href="#">Projects</a>
-          <a href="#">Contact</a>
         </div>
       </nav>
 
@@ -28,26 +40,26 @@ function App() {
               href="https://tr.linkedin.com/in/buse-u%C4%9Fra%C5%9F-380a6014a"
               target="blank"
             >
-              <span class="lnk-txt">Linkedin</span>
-              <i class="fa-brands fa-linkedin-in fa-s"></i>
+              <span className="lnk-txt">Linkedin</span>
+              <i className="fa-brands fa-linkedin-in fa-s"></i>
             </a>
           </li>
           <li>
             <a href="https://github.com/buseseker" target="blank">
-              <span class="lnk-txt">Github</span>
-              <i class="fa-brands fa-github"></i>
+              <span className="lnk-txt">Github</span>
+              <i className="fa-brands fa-github"></i>
             </a>
           </li>
           <li>
             <a href="https://www.hackerrank.com/buseugras" target="blank">
-              <span class="lnk-txt"> HackerRank</span>
-              <i class="fa-brands fa-hackerrank"></i>
+              <span className="lnk-txt"> HackerRank</span>
+              <i className="fa-brands fa-hackerrank"></i>
             </a>
           </li>
           <li>
             <a href="mailto:busesekerr96@gmail.com">
-              <span class="lnk-txt">E-mail</span>
-              <i class="fa-solid fa-envelope"></i>
+              <span className="lnk-txt">E-mail</span>
+              <i className="fa-solid fa-envelope"></i>
             </a>
           </li>
         </ul>
@@ -56,27 +68,27 @@ function App() {
       <article className="skills">
         <div className="skill-section">
           <div className="html">
-            <i class="fa-brands fa-html5 "></i>
+            <i className="fa-brands fa-html5 "></i>
             <h3>HTML5</h3>
           </div>
 
           <div className="css">
-            <i class="fa-brands fa-css3-alt "></i>
+            <i className="fa-brands fa-css3-alt "></i>
             <h3>CSS3</h3>
           </div>
 
           <div className="javascript">
-            <i class="fa-brands fa-square-js "></i>
+            <i className="fa-brands fa-square-js "></i>
             <h3>JavaScript</h3>
           </div>
 
           <div className="react">
-            <i class="fa-brands fa-react "></i>
+            <i className="fa-brands fa-react "></i>
             <h3>React.js</h3>
           </div>
 
           <div className="angular">
-            <i class="fa-brands fa-angular "></i>
+            <i className="fa-brands fa-angular "></i>
             <h3>Angular</h3>
           </div>
         </div>
