@@ -42,6 +42,9 @@
 }
 
 .navbar-lnk.open{
+  position: absolute;
+  left: 0;
+  width: 50%;
   display: flex;
   animation: slideFromLeft 0.5s ease forwards;
 }

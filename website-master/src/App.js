@@ -11,7 +11,7 @@ function App() {
         <div
           className="hamburger-menu"
           onClick={() => {
-            return setMenuOpen((prevMenuOpen) => !prevMenuOpen);
+          setMenuOpen((prevMenuOpen) => !prevMenuOpen);
           }}
         >
           <div className="bar"></div>
