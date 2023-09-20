@@ -98,6 +98,7 @@ nav .hamburger-menu .bar {
 
 .contact-lnk li a {
   text-decoration: none;
+  color: rgb(255, 96, 0);
 }
 
 .contact-lnk {
@@ -272,10 +273,10 @@ h3 {
 
 /* Apply the animation to the header element */
 .header .left-txt {
-  animation: slideFromLeft 1s ease forwards;
+  animation: slideFromLeft 2s ease forwards;
 }
 .header .right-txt {
-  animation: slideFromRight 1s ease forwards;
+  animation: slideFromRight 2s ease forwards;
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
