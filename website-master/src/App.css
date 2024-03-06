@@ -5,12 +5,12 @@
   z-index: 1;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
 .background-image {
-  background-image: url("https://rare-gallery.com/thumbs/4580148-keyboards-computer-mice-computer-window-desk.png");
+  background-image: url('https://rare-gallery.com/thumbs/4580148-keyboards-computer-mice-computer-window-desk.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -184,8 +184,6 @@ nav .hamburger-menu .bar {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   color: white;
   width: 100vw;
-  position: absolute;
-  bottom: 10px;
 }
 
 .skills h1,
@@ -366,7 +364,7 @@ h3 {
   }
 }
 
-.about-txt{
+.about-txt {
   /* border: 1px solid red; */
   text-align: center;
   color: white;
@@ -379,11 +377,67 @@ h3 {
   padding: 10px;
   animation: slideFromBottom 2.5s ease forwards;
 }
-.about-txt h1{
+.about-txt h1 {
   margin-bottom: 20px;
 }
 
-.about{
+.about {
   border: 1px solid red;
 }
 
+.project-cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+  height: 50vh;
+  margin-right: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.card img {
+  width: 90%;
+  height: 40%;
+  border-radius: 20px;
+  margin: 15px 0;
+}
+
+.card p {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-project {
+  padding: 10px 10px;
+  border-radius: 10px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.btn-project .github {
+  margin-right: 30px;
+  background-color: transparent;
+}
+
+.btn-project .github:hover {
+  background-color: rgb(255, 96, 0);
+  border: none;
+}
+
+.btn-project .demo {
+  margin-left: 30px;
+  background-color: rgb(255, 96, 0);
+  border: none;
+}
+
+.btn-project .demo:hover {
+  background-color: transparent;
+}
