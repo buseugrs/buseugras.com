@@ -7,27 +7,24 @@ const Projects = () => {
     <article className='project-cards'>
       <div className='card'>
         <img src={multiStepForm} alt='projects multi-step-form' />
-        <p>MULTI-STEP FORM</p>
-        <p>
+        <p className='project-header'>MULTI-STEP FORM</p>
+        <p className='project-info'>
           The Multi-Step Form project is designed to streamline the process of gathering personal information selecting
-          monthly or yearly plans and choosing additional add-ons. At its essence the project is focused on facilitating
-          user decision-making by providing a smooth and informative experience regarding the services available for
-          purchase.
+          monthly or yearly plans and choosing additional add-ons. The Multi-Step Form project is designed to
         </p>
         <div className='btn btn-project'>
-          <button className='btn-project github'>Github</button>
-          <button className='btn-project demo'>Live Demo</button>
+          <button className='demo'>LIVE DEMO</button>
         </div>
       </div>
       <div className='card'>
         <img src={ipAddressTracker} alt='' />
-        <p>IP ADDRESS TRACKER</p>
-        <p>
-        In this project, users can see the ISP, location and time zone information of their own IP address or another IP address and location information on the map.
+        <p className='project-header'>IP ADDRESS TRACKER</p>
+        <p className='project-info'>
+          In this project, users can see the ISP, location and time zone information of their own IP address or another
+          IP address and location information on the map.
         </p>
         <div className='btn btn-project'>
-          <button className='btn-project github'>Github</button>
-          <button className='btn-project demo'>Live Demo</button>
+          <button className='demo'>LIVE DEMO</button>
         </div>
       </div>
     </article>
