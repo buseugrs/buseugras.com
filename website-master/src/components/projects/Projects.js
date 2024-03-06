@@ -5,7 +5,7 @@ import ipAddressTracker from '../../assets/images/ip-address-tracker-desktop.png
 const Projects = () => {
   return (
     <article className='project-cards'>
-      <div className='card'>
+      <div className='card multi-step-form-card'>
         <img src={multiStepForm} alt='projects multi-step-form' />
         <p className='project-header'>MULTI-STEP FORM</p>
         <p className='project-info'>
@@ -13,10 +13,10 @@ const Projects = () => {
           monthly or yearly plans and choosing additional add-ons. The Multi-Step Form project is designed to
         </p>
         <div className='btn btn-project'>
-          <button className='demo'>LIVE DEMO</button>
+          <a className='demo' href='https://multi-step-form-psi-three.vercel.app/personel-info' target='_blank' >LIVE DEMO</a>
         </div>
       </div>
-      <div className='card'>
+      <div className='card ip-address-tracker-card'>
         <img src={ipAddressTracker} alt='' />
         <p className='project-header'>IP ADDRESS TRACKER</p>
         <p className='project-info'>
@@ -24,7 +24,7 @@ const Projects = () => {
           IP address and location information on the map.
         </p>
         <div className='btn btn-project'>
-          <button className='demo'>LIVE DEMO</button>
+          <a  className='demo' href='https://ip-address-tracker-psi-beige.vercel.app/' target='_blank'>LIVE DEMO</a>
         </div>
       </div>
     </article>

@@ -5,100 +5,27 @@
   z-index: 1;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .background-image {
-  background-image: url('https://rare-gallery.com/thumbs/4580148-keyboards-computer-mice-computer-window-desk.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
-  background-attachment: fixed; /* Optional: Fixed background */
+  background: url('https://rare-gallery.com/thumbs/4580148-keyboards-computer-mice-computer-window-desk.png') no-repeat
+    center center/cover;
+  min-height: 100vh;
+  background-attachment: fixed;
   position: relative;
-  background-size: 100% 100%;
 }
 
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
-}
-.navbar {
-  padding-top: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 7vh;
-  font-size: 1.1rem;
-}
-
-.navbar-lnk {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 20px;
-}
-
-.navbar-lnk.open {
-  position: absolute;
-  left: 0;
-  width: 50%;
-  display: flex;
-  animation: slideFromLeft 0.5s ease forwards;
-}
-
-.navbar-lnk ul {
-  list-style: none;
-  display: flex;
-}
-
-.navbar-lnk a {
-  margin: 0 30px;
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  transition: 0.3s ease;
-  padding: 15px 0;
-  border-top: 4px solid rgb(101, 39, 190);
-  border-bottom: 4px solid rgb(101, 39, 190);
-  border: hidden;
-}
-
-.navbar-lnk a:hover {
-  border-top: 4px solid white;
-  border-bottom: 4px solid white;
-  padding: 6px 0;
-}
-
-.hamburger-menu {
-  display: none;
-  position: absolute;
-  top: 1rem;
-  right: 0.5rem;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 2.25rem;
-  height: 2rem;
-  cursor: pointer;
-}
-
-nav .hamburger-menu .bar {
-  width: 100%;
-  height: 0.4rem;
-  background-color: white;
-  border-radius: 0.2rem;
-  margin: 5px;
 }
 
 .contact-lnk li a {
   text-decoration: none;
-  color: rgb(255, 96, 0);
+  color: rgba(252, 98, 8, 1);
 }
 
 .contact-lnk {
@@ -115,7 +42,7 @@ nav .hamburger-menu .bar {
   display: block;
   margin: 5px 25px;
   background: rgba(0, 0, 0, 0.2);
-  border: 1px solid rgb(255, 96, 0);
+  border: 1px solid rgba(252, 98, 8, 1);
   width: 300px;
   text-align: right;
   padding: 10px;
@@ -129,20 +56,20 @@ nav .hamburger-menu .bar {
 }
 
 .contact-lnk ul li:hover a {
-  color: rgb(255, 96, 0);
+  color: rgba(252, 98, 8, 1);
   font-weight: 600;
 }
 
 .contact-lnk ul li:hover i {
   color: #fff;
-  background: rgb(255, 96, 0);
+  background: rgba(252, 98, 8, 1);
   transform: rotate(360deg);
   transition: all 1s;
 }
 
 .contact-lnk ul li i {
   margin-left: 10px;
-  color: rgb(255, 96, 0);
+  color: rgba(252, 98, 8, 1);
   border-radius: 50%;
   padding: 10px;
   font-size: 20px;
@@ -157,7 +84,7 @@ nav .hamburger-menu .bar {
   color: white;
   line-height: 5rem;
   height: 20vh;
-  width: 100vw;
+  width: 100%;
   font-size: 2rem;
   display: flex;
   align-items: center;
@@ -179,52 +106,21 @@ nav .hamburger-menu .bar {
   justify-content: center;
   align-items: center;
 }
+
 .skills {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+  gap: 2rem 2rem;
   color: white;
-  width: 100vw;
+  width: 100%;
 }
 
-.skills h1,
-h3 {
-  font-weight: 400;
+.skills img {
+  height: 25px;
 }
-
-.skill-section {
-  display: flex;
-  justify-content: center;
-}
-
-.skill-section i {
-  margin-bottom: 20px;
-  color: rgb(255, 96, 0);
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.skill-section i:hover {
-  transform: rotateY(360deg);
-  transition: transform 0.5s; /* Add a smooth transition effect */
-}
-
-.html,
-.css,
-.javascript,
-.react,
-.angular {
-  margin: 20px 50px 20px 50px;
-  /* Adjust the margin size as needed */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 /* Animation Descriptions */
 
 @keyframes slideFromLeft {
@@ -276,117 +172,10 @@ h3 {
   animation: slideFromRight 2s ease forwards;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  nav .hamburger-menu {
-    display: flex;
-  }
-
-  .navbar-lnk {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    align-items: start;
-    margin-top: 6rem;
-  }
-
-  .content {
-    flex-direction: column;
-    font-size: 1rem;
-    line-height: 3rem;
-  }
-
-  .header span {
-    display: none;
-  }
-
-  .skill-section h3 {
-    display: none;
-  }
-
-  .skill-section i {
-    margin: 0;
-    width: 70px;
-    height: 70px;
-    font-size: 40px;
-  }
-
-  .html,
-  .css,
-  .javascript,
-  .react,
-  .angular {
-    margin: 0.5%;
-    /* Adjust the margin size as needed */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  nav .hamburger-menu {
-    display: flex;
-  }
-
-  .navbar-lnk {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    align-items: start;
-    margin-top: 6rem;
-  }
-
-  .content {
-    flex-direction: column;
-    font-size: 1rem;
-    line-height: 3rem;
-  }
-  .header span {
-    display: none;
-  }
-
-  .skill-section h3 {
-    display: none;
-  }
-
-  .skill-section i {
-    margin: 0;
-    width: 60px;
-    height: 60px;
-    font-size: 40px;
-  }
-
-  .html,
-  .css,
-  .javascript,
-  .react,
-  .angular {
-    margin: 0.5%;
-    /* Adjust the margin size as needed */
-  }
-}
-
-.about-txt {
-  /* border: 1px solid red; */
-  text-align: center;
-  color: white;
-  line-height: 2.5rem;
-  margin: auto;
-  width: 50vw;
-  margin-top: 120px;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  padding: 10px;
-  animation: slideFromBottom 2.5s ease forwards;
-}
-.about-txt h1 {
-  margin-bottom: 20px;
-}
-
-.about {
-  border: 1px solid red;
-}
-
 .project-cards {
   display: flex;
   justify-content: center;
+  gap: 2rem 0;
   margin-top: 5vh;
 }
 
@@ -432,15 +221,160 @@ h3 {
 
 .btn-project .demo {
   background: radial-gradient(at center, rgba(244, 173, 48, 1), rgba(252, 98, 8, 1));
-  border: none;
-  padding: 0.8rem;
+  padding: 0.6rem;
   border-radius: 20px;
   color: #fff;
-  font-weight: 900;
+  font-weight: 700;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .btn-project .demo:hover {
   background: radial-gradient(at center, rgba(252, 98, 8, 1), rgba(244, 173, 48, 1));
   color: #fff;
 }
+
+.contact-lnk-touchable{
+  display: none;
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+  .header span {
+    display: none;
+  }
+
+  .project-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .card {
+    width: 80vw;
+    margin-right: 0;
+    margin-bottom: 3rem;
+    height: 40vh;
+  }
+
+  .contact-lnk{
+    display: none;
+  }
+
+  .contact-lnk-touchable {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0 4rem;
+  }
+  
+  .contact-lnk-touchable a {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.6rem;
+    border-radius: 20px;
+    color: rgba(252, 98, 8, 1);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .contact-lnk-touchable a i {
+    margin-left: 0.5rem;
+  }
+  
+  .ip-address-tracker-card{
+    margin-bottom: 8rem;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .content {
+    flex-direction: column;
+    font-size: 1rem;
+    line-height: 3rem;
+  }
+  .header span {
+    display: none;
+  }
+
+  .skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    gap: 1rem 2rem;
+    color: white;
+    width: 100vw;
+  }
+
+  .skills img {
+    height: 20px;
+  }
+
+  .project-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    height: 65vh;
+    margin-right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 3rem;
+  }
+
+  .card img {
+    height: 20%;
+  }
+
+  .contact-lnk{
+    display: none;
+  }
+
+  .contact-lnk-touchable {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0 1rem;
+  }
+  
+  .contact-lnk-touchable a {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.3rem;
+    border-radius: 20px;
+    color: rgba(252, 98, 8, 1);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .lnk-txt{
+    font-size: 0.8rem;
+  }
+  
+  .contact-lnk-touchable a i {
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .ip-address-tracker-card{
+    margin-bottom: 8rem;
+  }
+}
+
