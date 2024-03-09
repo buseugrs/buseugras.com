@@ -2,8 +2,6 @@
 
 <p align="center"><img src="https://socialify.git.ci/buseugrs/buseugras.com/image?language=1&name=1&owner=1&pattern=Circuit%20Board&theme=Light" alt="project-image"></p>
 
-<p id="description">The Multi-Step Form project is designed to streamline the process of gathering personal information selecting monthly or yearly plans and choosing additional add-ons. At its essence the project is focused on facilitating user decision-making by providing a smooth and informative experience regarding the services available for purchase.</p>
-
 <p align="center"><img src="https://img.shields.io/badge/VSCode-%23007ACC?style=flat&amp;logo=visualstudiocode&amp;logoColor=%23007ACC&amp;labelColor=white" alt="shields"> <img src="https://img.shields.io/badge/React-%2361DAFB?style=flat&amp;logo=tailwindcss&amp;labelColor=white" alt="shields"> <img src="https://img.shields.io/badge/HTML5-%23E34F26?logo=html5&amp;labelColor=white" alt="shields"> <img src="https://img.shields.io/badge/CSS3-%231572B6?logo=css3&logoColor=%231572B6&labelColor=white"></p>
 
 <h2>🚀 Demo</h2>
