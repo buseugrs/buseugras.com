@@ -15,7 +15,7 @@ const ContactLinks = () => {
           </a>
         </li>
         <li>
-          <a href="https://github.com/buseseker" target="blank">
+          <a href="https://github.com/buseugrs" target="blank">
             <span className="lnk-txt">Github</span>
             <i className="fa-brands fa-github"></i>
           </a>
