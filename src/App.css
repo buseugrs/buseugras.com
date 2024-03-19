@@ -175,7 +175,8 @@
 .project-cards {
   display: flex;
   justify-content: center;
-  gap: 2rem 0;
+  flex-wrap: wrap;
+  gap: 0 4rem;
   margin-top: 5vh;
 }
 
@@ -183,12 +184,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 20vw;
+  width: 350px;
   height: 50vh;
-  margin-right: 50px;
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
-  position: relative;
 }
 
 .card img {
@@ -204,22 +204,18 @@
   margin-bottom: 20px;
 }
 
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .project-info {
   line-height: 1.8rem;
   padding: 0 1rem;
 }
 
-.btn-project {
-  padding: 10px 10px;
-  transition: 0.5s;
-  position: absolute;
-  bottom: 0.5rem;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.btn-project .demo {
+.project-btn {
+  display: inline-block;
   background: radial-gradient(at center, rgba(244, 173, 48, 1), rgba(252, 98, 8, 1));
   padding: 0.6rem;
   border-radius: 20px;
@@ -229,12 +225,12 @@
   text-decoration: none;
 }
 
-.btn-project .demo:hover {
+.project-btn:hover {
   background: radial-gradient(at center, rgba(252, 98, 8, 1), rgba(244, 173, 48, 1));
   color: #fff;
 }
 
-.contact-lnk-touchable{
+.contact-lnk-touchable {
   display: none;
 }
 
@@ -262,7 +258,7 @@
     height: 40vh;
   }
 
-  .contact-lnk{
+  .contact-lnk {
     display: none;
   }
 
@@ -274,7 +270,7 @@
     justify-content: center;
     gap: 0 4rem;
   }
-  
+
   .contact-lnk-touchable a {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0.6rem;
@@ -284,12 +280,12 @@
     text-decoration: none;
     font-weight: 500;
   }
-  
+
   .contact-lnk-touchable a i {
     margin-left: 0.5rem;
   }
-  
-  .ip-address-tracker-card{
+
+  .ip-address-tracker-card {
     margin-bottom: 8rem;
   }
 }
@@ -341,7 +337,7 @@
     height: 20%;
   }
 
-  .contact-lnk{
+  .contact-lnk {
     display: none;
   }
 
@@ -353,7 +349,7 @@
     justify-content: center;
     gap: 0 1rem;
   }
-  
+
   .contact-lnk-touchable a {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0.3rem;
@@ -364,17 +360,16 @@
     font-weight: 500;
   }
 
-  .lnk-txt{
+  .lnk-txt {
     font-size: 0.8rem;
   }
-  
+
   .contact-lnk-touchable a i {
     margin-left: 0.5rem;
     font-size: 0.8rem;
   }
-  
-  .ip-address-tracker-card{
+
+  .ip-address-tracker-card {
     margin-bottom: 8rem;
   }
 }
-
