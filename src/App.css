@@ -245,19 +245,6 @@
     display: none;
   }
 
-  .project-cards {
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-  }
-
-  .card {
-    width: 80vw;
-    margin-right: 0;
-    margin-bottom: 3rem;
-    height: 40vh;
-  }
-
   .contact-lnk {
     display: none;
   }
@@ -293,7 +280,7 @@
 @media screen and (max-width: 767px) {
   .content {
     flex-direction: column;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 3rem;
   }
   .header span {
@@ -314,29 +301,6 @@
     height: 20px;
   }
 
-  .project-cards {
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-  }
-
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80vw;
-    height: 65vh;
-    margin-right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    position: relative;
-    margin-bottom: 3rem;
-  }
-
-  .card img {
-    height: 20%;
-  }
-
   .contact-lnk {
     display: none;
   }
@@ -352,7 +316,7 @@
 
   .contact-lnk-touchable a {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 0.3rem;
+    padding: 0.6rem;
     border-radius: 20px;
     color: rgba(252, 98, 8, 1);
     cursor: pointer;
@@ -360,15 +324,18 @@
     font-weight: 500;
   }
 
-  .lnk-txt {
-    font-size: 0.8rem;
-  }
-
   .contact-lnk-touchable a i {
     margin-left: 0.5rem;
-    font-size: 0.8rem;
   }
 
+  .project-cards{
+    gap: 2rem 0;
+  }
+
+  .card{
+    width: 70vh;
+    height: 400px;
+  }
   .ip-address-tracker-card {
     margin-bottom: 8rem;
   }
