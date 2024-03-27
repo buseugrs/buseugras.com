@@ -14,7 +14,7 @@ const Projects = () => {
             The Multi-Step Form project is designed to streamline the process of gathering personal information
             selecting monthly or yearly plans and choosing additional add-ons.
           </p>
-          <a className='project-btn' href='https://multi-step-form-psi-three.vercel.app/personel-info' target='_blank'>
+          <a className='project-btn' href='https://vercel.com/buseugrs-projects/multi-step-form' target='_blank'>
             LIVE DEMO
           </a>
         </div>
