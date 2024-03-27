@@ -170,12 +170,6 @@ body{
 }
 
 /* Apply the animation to the header element */
-.header .left-txt {
-  animation: slideFromLeft 2s ease forwards;
-}
-.header .right-txt {
-  animation: slideFromRight 2s ease forwards;
-}
 
 .project-cards {
   display: flex;
