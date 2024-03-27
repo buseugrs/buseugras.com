@@ -5,6 +5,11 @@
   z-index: 1;
 }
 
+
+body{
+  overflow-x:hidden
+ }
+ 
 .background-image {
   background: url('https://rare-gallery.com/thumbs/4580148-keyboards-computer-mice-computer-window-desk.png') no-repeat
     center center/cover;
@@ -288,11 +293,6 @@
 }
 
 @media screen and (max-width: 767px) {
-
-  body{
-    overflow-x:hidden !important
-   }
-   
   .content {
     flex-direction: column;
     font-size: 1.5rem;
