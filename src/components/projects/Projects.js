@@ -1,6 +1,7 @@
 import React from 'react';
 import multiStepForm from '../../assets/images/multi-step-form.png';
 import ipAddressTracker from '../../assets/images/ip-address-tracker-desktop.png';
+import multiSelect from '../../assets/images/multi-select-autocomplete.png'
 
 const Projects = () => {
   return (
@@ -27,6 +28,19 @@ const Projects = () => {
             another IP address and location information on the map.
           </p>
           <a className='project-btn' href='https://ip-address-tracker-psi-beige.vercel.app/' target='_blank'>
+            LIVE DEMO
+          </a>
+        </div>
+      </div>
+      <div className='card multiselect-autocomplete-card'>
+        <img src={multiSelect} alt='' />
+        <div className='project-card'>
+          <p className='project-header'>MULTISELECT AUTOCOMPLETE COMPONENT</p>
+          <p className='project-info'>
+            A multi-select autocomplete component that is developed using Typescript and GraphQL is designed to search
+            select and delete characters using the Rick and Morty API.
+          </p>
+          <a className='project-btn' href='https://multi-select-autocomplete-flame.vercel.app/' target='_blank'>
             LIVE DEMO
           </a>
         </div>
