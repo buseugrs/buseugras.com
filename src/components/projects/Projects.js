@@ -40,7 +40,7 @@ const Projects = () => {
             A multi-select autocomplete component that is developed using Typescript and GraphQL is designed to search
             select and delete characters using the Rick and Morty API.
           </p>
-          <a className='project-btn' href='https://multi-select-autocomplete-flame.vercel.app/' target='_blank'>
+          <a className='project-btn' href='https://multi-select-autocomplete-seven.vercel.app/' target='_blank'>
             LIVE DEMO
           </a>
         </div>
