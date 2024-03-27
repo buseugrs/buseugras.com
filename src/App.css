@@ -4,11 +4,6 @@
   box-sizing: border-box;
   z-index: 1;
 }
-
-
-body{
-overflow-x: hidden;
- }
  
 .background-image {
   background: url('https://rare-gallery.com/thumbs/4580148-keyboards-computer-mice-computer-window-desk.png') no-repeat
