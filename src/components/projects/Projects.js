@@ -14,7 +14,7 @@ const Projects = () => {
             The Multi-Step Form project is designed to streamline the process of gathering personal information
             selecting monthly or yearly plans and choosing additional add-ons.
           </p>
-          <a className='project-btn' href='https://multi-step-form-psi-three.vercel.app/' target='_blank'>
+          <a className='project-btn' href='https://multi-step-form-96ce9.web.app/personel-info' target='_blank'>
             LIVE DEMO
           </a>
         </div>
@@ -27,7 +27,7 @@ const Projects = () => {
             In this project, users can see the ISP, location and time zone information of their own IP address or
             another IP address and location information on the map.
           </p>
-          <a className='project-btn' href='https://ip-address-tracker-psi-beige.vercel.app/' target='_blank'>
+          <a className='project-btn' href='https://ip-address-tracker-73398.web.app/' target='_blank'>
             LIVE DEMO
           </a>
         </div>
@@ -40,7 +40,7 @@ const Projects = () => {
             A multi-select autocomplete component that is developed using Typescript and GraphQL is designed to search
             select and delete characters using the Rick and Morty API.
           </p>
-          <a className='project-btn' href='https://multi-select-autocomplete-seven.vercel.app/' target='_blank'>
+          <a className='project-btn' href='https://multi-select-autocomplet-8a30a.web.app/' target='_blank'>
             LIVE DEMO
           </a>
         </div>
