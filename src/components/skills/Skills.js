@@ -38,6 +38,11 @@ const Skills = () => {
 '
         alt='shields'
       />
+      <img
+        src='https://img.shields.io/badge/GraphQL-%23E10098?logo=graphql&logoColor=%23E10098&labelColor=white
+'
+        alt='shields'
+      />
     </article>
   );
 };
