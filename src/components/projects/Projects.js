@@ -7,6 +7,19 @@ import quotesCyclopedia from '../../assets/images/quotes-cyclopedia.png';
 const Projects = () => {
   return (
     <article className='project-cards'>
+      <div className='card quotes-cyclopedia-card'>
+        <img src={quotesCyclopedia} alt='' />
+        <div className='project-card'>
+          <p className='project-header'>QUOTES CYCLOPEDIA</p>
+          <p className='project-info'>
+            This project is a React-based website showcasing quotes and life stories of famous individuals
+            with its user-friendly interface and dynamic content.
+          </p>
+          <a className='project-btn' href='https://quotescyclopedia.com/' target='_blank'>
+            LIVE DEMO
+          </a>
+        </div>
+      </div>
       <div className='card multi-step-form-card'>
         <img src={multiStepForm} alt='projects multi-step-form' />
         <div className='project-card'>
@@ -42,19 +55,6 @@ const Projects = () => {
             select and delete characters using the Rick and Morty API.
           </p>
           <a className='project-btn' href='https://multi-select-autocomplet-8a30a.web.app/' target='_blank'>
-            LIVE DEMO
-          </a>
-        </div>
-      </div>
-      <div className='card multiselect-autocomplete-card'>
-        <img src={quotesCyclopedia} alt='' />
-        <div className='project-card'>
-          <p className='project-header'>QUOTES CYCLOPEDIA</p>
-          <p className='project-info'>
-            This project is a React-based website showcasing quotes and life stories of famous individuals
-            with its user-friendly interface and dynamic content.
-          </p>
-          <a className='project-btn' href='https://quotescyclopedia.com/' target='_blank'>
             LIVE DEMO
           </a>
         </div>
